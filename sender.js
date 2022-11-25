@@ -7,7 +7,7 @@ window['__onGCastApiAvailable'] = function(isAvailable) {
 
 initializeCastApi = function() {
     cast.framework.CastContext.getInstance().setOptions({
-      receiverApplicationId: applicationId,
-      autoJoinPolicy: chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED
+      receiverApplicationId: chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID,
+    //   autoJoinPolicy: chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED
     });
   };
