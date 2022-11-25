@@ -3,7 +3,6 @@ console.log('sender.js');
 
 window['__onGCastApiAvailable'] = function (isAvailable) {
     console.log('onGCastApiAvailable');
-    console.log('isAvailable',isAvailable);
     isAvailable = true;
     if (isAvailable) {
         initializeCastApi();
