@@ -11,7 +11,6 @@ window['__onGCastApiAvailable'] = function (isAvailable) {
 
 initializeCastApi = function() {
     console.log('initialize success')
-    console.log('cast : ',cast)
     cast.framework.CastContext.getInstance().
     setOptions({
       receiverApplicationId: chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID
